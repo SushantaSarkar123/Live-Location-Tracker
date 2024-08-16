@@ -34,7 +34,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-
+app.get('/in', (req, res) => {
+  console.log("Getting into Index.ejs")
+  res.render('index');
+});
 
 
 
