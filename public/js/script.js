@@ -1,4 +1,4 @@
-const socket = io();//"https://live-tracker-6dozl5a14-sushnata-sarkars-projects.vercel.app/"
+const socket = io("https://livelocation-yauytge1.b4a.run/");//"https://live-tracker-6dozl5a14-sushnata-sarkars-projects.vercel.app/"
 
 if(navigator.geolocation){
     navigator.geolocation.watchPosition((position)=>{

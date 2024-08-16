@@ -30,6 +30,7 @@ io.on('connection', (socket) => {
 
 // Route handling
 app.get('/', (req, res) => {
+  console.log("Getting into Index.ejs")
   res.render('index');
 });
 
