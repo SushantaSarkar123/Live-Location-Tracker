@@ -39,8 +39,9 @@ app.get('/', (req, res) => {
 
 
 
-server.listen(3000, "localhost", () => {
-  console.log(`Server running at http://localhost:3000/`);
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
 });
 //// Error handling middleware
 // app.use((err, req, res, next) => {
