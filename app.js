@@ -32,9 +32,7 @@ io.on('connection', (socket) => {
 app.get('/', (req, res) => {
   res.render('index');
 });
-// app.get('/in', (req, res) => {
-//   res.render('in');
-// });
+
 
 
 
@@ -43,11 +41,7 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
-//// Error handling middleware
-// app.use((err, req, res, next) => {
-//   console.error(err.stack);
-//   res.status(500).send('Something broke!');
-// });
+
 
 module.exports = (req, res) => {
   if (req.method === 'GET') {
@@ -56,25 +50,3 @@ module.exports = (req, res) => {
     res.status(405).send('Method Not Allowed');
   }
 };
-////
-
-// module.exports = (req, res) => {
-//   if (req.method === 'GET') {
-//     return app(req, res);
-//   } else {
-//     return res.status(405).send('Method Not Allowed');
-//   }
-// };
-
-
-// const express = require('express');
-// const app = express();
-
-// app.get('/', (req, res) => {
-//     console.log("hi");
-//   res.send('Hello World');
-// });
-
-// module.exports = (req, res) => {
-//   app(req, res);
-// };
