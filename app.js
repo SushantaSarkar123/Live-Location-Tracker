@@ -40,6 +40,12 @@ app.get('/in', (req, res) => {
 });
 
 
+app.get('/intro', (req, res) => {
+  console.log("Getting into Index.ejs")
+  res.send("hi");
+});
+
+
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
