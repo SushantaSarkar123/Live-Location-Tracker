@@ -41,7 +41,7 @@ app.get('/in', (req, res) => {
 
 
 app.get('/intro', (req, res) => {
-  console.log("Getting into Index.ejs")
+  console.log("Getting into hi")
   res.send("hi");
 });
 
